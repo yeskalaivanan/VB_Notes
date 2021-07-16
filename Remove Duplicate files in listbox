@@ -1,0 +1,9 @@
+Private Sub RepoveDuplicate()
+        For Row As Int16 = 0 To ListBox1.Items.Count - 2
+            For RowAgain As Int16 = ListBox1.Items.Count - 1 To Row + 1 Step -1
+                If ListBox1.Items(Row).ToString = ListBox1.Items(RowAgain).ToString Then
+                    ListBox1.Items.RemoveAt(RowAgain)
+                End If
+            Next
+        Next
+End Sub
