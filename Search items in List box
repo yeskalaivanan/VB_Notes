@@ -1,0 +1,8 @@
+Dim count As Integer = (ListBox1.Items.Count – 1)
+Dim words As String
+For search = 0 To count
+words = ListBox1.Items.Item(search)
+If InStr(words.ToLower, TextBox1.Text.ToLower) Then
+ListBox1.SelectedItem = words
+End If
+Next
