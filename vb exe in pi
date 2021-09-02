@@ -1,0 +1,39 @@
+Use these codes and check. Worked for me :D
+
+http://www.mono-project.com/download/stable/#download-lin-raspbian
+
+(I used Raspbian- check under linux tab, then raspbian tab, Raspbian 9(for Stretch) or Raspbian 8 (for Jessie))
+
+Raspbian 9 (armhf)
+
+sudo apt install apt-transport-https dirmngr
+
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+
+echo "deb https://download.mono-project.com/repo/debian stable-raspbianstretch main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
+
+sudo apt update
+
+Raspbian 8 (armhf)
+
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+
+sudo apt install apt-transport-https
+
+echo "deb https://download.mono-project.com/repo/debian stable-raspbianjessie main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
+
+sudo apt update
+
+use line by line
+
+and then install mono
+
+sudo apt install mono-devel
+
+and finally for vb use this
+
+sudo apt-get install mono-vbnc
+
+for more info https://www.raspberrypi.org/forums/viewtopic.php?t=6715
+
+Good luck mate :)
