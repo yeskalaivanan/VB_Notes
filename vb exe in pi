@@ -45,3 +45,6 @@ sudo apt-get install libcanberra-gtk-module
 Linux command to display info about all RPi hardware
 sudo apt install lshw inxi
 sudo inxi -Fxz
+
+to check com port
+dmesg | grep tty
